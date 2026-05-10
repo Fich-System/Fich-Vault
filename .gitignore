@@ -1,0 +1,11 @@
+﻿# Arquivos do OpenClaw (não versionar)
+AGENTS.md
+SOUL.md
+TOOLS.md
+USER.md
+IDENTITY.md
+HEARTBEAT.md
+
+# Sistema
+.DS_Store
+Thumbs.db
