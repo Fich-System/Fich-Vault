@@ -55,7 +55,7 @@ Mapeamento das migrações EAV do backend para possíveis futuras páginas de co
 | V94 | Ocorrencia | — | ❌ Não iniciado |
 | V95 | AlertaManutencao | AlertaManutencao | ✅ Concluído PR #153 |
 | V96 | WorkflowManutencao | — | ❌ Não iniciado |
-| V97 | AvaliacaoFornecedor | — | ❌ Não iniciado |
+| V97 | AvaliacaoFornecedor | AvaliacaoFornecedor | ✅ Concluído PR #154 |
 | V98 | CompetenciaTecnica | — | ❌ Não iniciado |
 | V99 | LimiteConsumoCombustivel | — | ❌ Não iniciado |
 | V100 | ProdutoAvaliacao | — | ❌ Não iniciado |
@@ -72,10 +72,10 @@ Mapeamento das migrações EAV do backend para possíveis futuras páginas de co
 | Grupo A | 6 | ✅ Concluído | Entidades nativas |
 | Grupo B | 17 | ✅ Concluído | Entidades nativas |
 | Grupo C | 4 | ✅ Concluído | Entidades nativas |
-| Grupo D — Backend EAV | 10 | 🟢 1/10 concluído | ✅ Concluído (V94–V103) |
+| Grupo D — Backend EAV | 10 | 🟢 2/10 concluído | ✅ Concluído (V94–V103) |
 
-**Total frontend: 28 entidades | 28 concluídas | 0 pendente**
+**Total frontend: 29 entidades | 29 concluídas | 0 pendente**
 
 ---
 
-*Última atualização: 2026-05-10 — Grupo D Backend EAV iniciado: AlertaManutencao PR #153 ✅*
+*Última atualização: 2026-05-10 — Grupo D Backend EAV: AlertaManutencao PR #153 ✅, AvaliacaoFornecedor PR #154 ✅*

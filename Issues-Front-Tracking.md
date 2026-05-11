@@ -47,5 +47,6 @@
 | # | Título | Branch | PR | Status |
 |---|--------|--------|-----|--------|
 | #133 | EAV AlertaManutencao | feat/eav-alerta-manutencao | #153 | ✅ Concluído |
+| #134 | EAV AvaliacaoFornecedor | feat/eav-avaliacao-fornecedor | #154 | ✅ Concluído |
 
-**Total: 28 issues | 28 concluídas | 0 pendente**
+**Total: 29 issues | 29 concluídas | 0 pendente**
