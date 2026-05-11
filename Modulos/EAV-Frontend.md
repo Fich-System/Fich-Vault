@@ -180,7 +180,7 @@ Para adicionar uma nova entidade EAV no frontend, siga este passo a passo:
 
 - [x] **Grupo B** — 17 entidades (média prioridade) ✅
 - [x] **Grupo C** — 4 entidades (baixa prioridade) — ✅ 4/4 CONCLUÍDO (#92 NotaFiscalServico, #91 Servico, #90 RegraTributacao, #89 SubGrupo)
-- [ ] **Grupo D** — Backend EAV (10 entidades) — 🟢 1/10 concluído
+- [ ] **Grupo D** — Backend EAV — 🟢 17 entidades (8 concluídas + 9 QA Aprovado: AlertaManutencao, AvaliacaoFornecedor, BannerEcommerce, CompetenciaTecnica, ConfiguracaoEcommerce, Driver, FuncionarioBeneficio, GrupoDestaque, LimiteConsumoCombustivel, ManutencaoProgramada, Ocorrencia, Produto, ProdutoAvaliacao, Titulo, TreinamentoTecnico, Veiculo, WorkflowManutencao)
 - [ ] Testes de integração das páginas
 - [ ] Validação de permissões por entidade
 
@@ -337,7 +337,7 @@ lib/pages/configuracoes/eav/
 └── movimentacao_estoque_eav_config_page.dart
 ```
 
-**Total: 225 arquivos** (43 do Grupo A + 119 do Grupo B (17×7) + 28 do Grupo C (4×7: NotaFiscalServico, Servico, RegraTributacao, SubGrupo) + 28 do Grupo D (4×7: AlertaManutencao, AvaliacaoFornecedor, BannerEcommerce, CompetenciaTecnica) + 1 helper eav_helpers.dart + 6 helpers/componentes)
+**Total: 316 arquivos** (43 do Grupo A + 119 do Grupo B (17×7) + 28 do Grupo C (4×7) + 119 do Grupo D (17×7: AlertaManutencao, AvaliacaoFornecedor, BannerEcommerce, CompetenciaTecnica, ConfiguracaoEcommerce, Driver, FuncionarioBeneficio, GrupoDestaque, LimiteConsumoCombustivel, ManutencaoProgramada, Ocorrencia, Produto, ProdutoAvaliacao, Titulo, TreinamentoTecnico, Veiculo, WorkflowManutencao) + 1 helper eav_helpers.dart + 6 helpers/componentes)
 
 ## Entidades Implementadas — Grupo C ✅ CONCLUÍDO (4/4)
 
@@ -385,7 +385,7 @@ lib/pages/configuracoes/eav/
 └── subgrupo_eav_config_page.dart
 ```
 
-## Entidades Implementadas — Grupo D 🟢 Em Progresso (4)
+## Entidades Implementadas — Grupo D 🟢 Em Progresso (8)
 
 | # | Entidade | Branch | PR | Status |
 |---|----------|--------|-----|--------|
@@ -393,8 +393,21 @@ lib/pages/configuracoes/eav/
 | #134 | AvaliacaoFornecedor | feat/eav-avaliacao-fornecedor | #154 | ✅ Concluído |
 | #135 | BannerEcommerce | feat/eav-banner-ecommerce | #155 | ✅ Concluído |
 | #136 | CompetenciaTecnica | feat/eav-competencia-tecnica | #156 | ✅ Concluído |
+| #137 | ConfiguracaoEcommerce | feat/eav-configuracao-ecommerce | #157 | ✅ Concluído |
+| #139 | Driver | feat/eav-driver | #158 | ✅ Concluído |
+| #140 | FuncionarioBeneficio | feat/eav-funcionario-beneficio | #159 | ✅ Concluído |
+| #141 | GrupoDestaque | feat/eav-grupo-destaque | #160 | ✅ QA Aprovado |
+| #142 | LimiteConsumoCombustivel | feat/eav-limite-consumo | #161 | ✅ QA Aprovado |
+| #143 | ManutencaoProgramada | feat/eav-manutencao-programada | #162 | ✅ Concluído |
+| #144 | Ocorrencia | feat/eav-ocorrencia | #163 | ✅ QA Aprovado |
+| #145 | Produto | feat/eav-produto | #164 | ✅ QA Aprovado |
+| #146 | ProdutoAvaliacao | feat/eav-produto-avaliacao | #165 | ✅ QA Aprovado |
+| #148 | Titulo | feat/eav-titulo | #166 | ✅ QA Aprovado |
+| #149 | TreinamentoTecnico | feat/eav-treinamento-tecnico | #167 | ✅ QA Aprovado |
+| #150 | Veiculo | feat/eav-veiculo | #168 | ✅ QA Aprovado |
+| #151 | WorkflowManutencao | feat/eav-workflow-manutencao | #169 | ✅ QA Aprovado |
 
-**Grupo D: 4 concluído — Entidades com backend EAV (V94–V103 + novas)**
+**Grupo D: 17 entidades (8 concluídas + 9 QA Aprovado) — Entidades com backend EAV (V94–V103 + novas)**
 
 ### Estrutura de Arquivos no Projeto (Grupo D adicionado)
 
@@ -429,8 +442,99 @@ lib/pages/configuracoes/eav/
 ├── competencia_tecnica_campos_page.dart
 ├── competencia_tecnica_campo_form_page.dart
 └── competencia_tecnica_eav_config_page.dart
+├── configuracao_ecommerce_abas_page.dart
+├── configuracao_ecommerce_aba_form_page.dart
+├── configuracao_ecommerce_grupos_page.dart
+├── configuracao_ecommerce_grupo_form_page.dart
+├── configuracao_ecommerce_campos_page.dart
+├── configuracao_ecommerce_campo_form_page.dart
+└── configuracao_ecommerce_eav_config_page.dart
+├── driver_abas_page.dart
+├── driver_aba_form_page.dart
+├── driver_grupos_page.dart
+├── driver_grupo_form_page.dart
+├── driver_campos_page.dart
+├── driver_campo_form_page.dart
+└── driver_eav_config_page.dart
+├── funcionario_beneficio_abas_page.dart
+├── funcionario_beneficio_aba_form_page.dart
+├── funcionario_beneficio_grupos_page.dart
+├── funcionario_beneficio_grupo_form_page.dart
+├── funcionario_beneficio_campos_page.dart
+├── funcionario_beneficio_campo_form_page.dart
+└── funcionario_beneficio_eav_config_page.dart
+├── grupo_destaque_abas_page.dart
+├── grupo_destaque_aba_form_page.dart
+├── grupo_destaque_grupos_page.dart
+├── grupo_destaque_grupo_form_page.dart
+├── grupo_destaque_campos_page.dart
+├── grupo_destaque_campo_form_page.dart
+└── grupo_destaque_eav_config_page.dart
+├── limite_consumo_abas_page.dart
+├── limite_consumo_aba_form_page.dart
+├── limite_consumo_grupos_page.dart
+├── limite_consumo_grupo_form_page.dart
+├── limite_consumo_campos_page.dart
+├── limite_consumo_campo_form_page.dart
+└── limite_consumo_eav_config_page.dart
+├── manutencao_programada_abas_page.dart
+├── manutencao_programada_aba_form_page.dart
+├── manutencao_programada_grupos_page.dart
+├── manutencao_programada_grupo_form_page.dart
+├── manutencao_programada_campos_page.dart
+├── manutencao_programada_campo_form_page.dart
+└── manutencao_programada_eav_config_page.dart
+├── ocorrencia_abas_page.dart
+├── ocorrencia_aba_form_page.dart
+├── ocorrencia_grupos_page.dart
+├── ocorrencia_grupo_form_page.dart
+├── ocorrencia_campos_page.dart
+├── ocorrencia_campo_form_page.dart
+└── ocorrencia_eav_config_page.dart
+├── produto_abas_page.dart
+├── produto_aba_form_page.dart
+├── produto_grupos_page.dart
+├── produto_grupo_form_page.dart
+├── produto_campos_page.dart
+├── produto_campo_form_page.dart
+└── produto_eav_config_page.dart
+├── produto_avaliacao_abas_page.dart
+├── produto_avaliacao_aba_form_page.dart
+├── produto_avaliacao_grupos_page.dart
+├── produto_avaliacao_grupo_form_page.dart
+├── produto_avaliacao_campos_page.dart
+├── produto_avaliacao_campo_form_page.dart
+└── produto_avaliacao_eav_config_page.dart
+├── titulo_abas_page.dart
+├── titulo_aba_form_page.dart
+├── titulo_grupos_page.dart
+├── titulo_grupo_form_page.dart
+├── titulo_campos_page.dart
+├── titulo_campo_form_page.dart
+└── titulo_eav_config_page.dart
+├── treinamento_tecnico_abas_page.dart
+├── treinamento_tecnico_aba_form_page.dart
+├── treinamento_tecnico_grupos_page.dart
+├── treinamento_tecnico_grupo_form_page.dart
+├── treinamento_tecnico_campos_page.dart
+├── treinamento_tecnico_campo_form_page.dart
+└── treinamento_tecnico_eav_config_page.dart
+├── veiculo_abas_page.dart
+├── veiculo_aba_form_page.dart
+├── veiculo_grupos_page.dart
+├── veiculo_grupo_form_page.dart
+├── veiculo_campos_page.dart
+├── veiculo_campo_form_page.dart
+└── veiculo_eav_config_page.dart
+├── workflow_manutencao_abas_page.dart
+├── workflow_manutencao_aba_form_page.dart
+├── workflow_manutencao_grupos_page.dart
+├── workflow_manutencao_grupo_form_page.dart
+├── workflow_manutencao_campos_page.dart
+├── workflow_manutencao_campo_form_page.dart
+└── workflow_manutencao_eav_config_page.dart
 ```
 
 ---
 
-*Última atualização: 2026-05-10 — Projeto EAV Frontend expandido! Grupos A–C completos (27/27) + Grupo D em progresso (4 concluído: AlertaManutencao #153, AvaliacaoFornecedor #154, BannerEcommerce #155, CompetenciaTecnica #156 ✅)*
+*Última atualização: 2026-05-11 — Grupo D: WorkflowManutencao PR #169 ✅ QA Aprovado. Total Grupo D: 17 entidades.*

@@ -52,16 +52,17 @@ Mapeamento das migrações EAV do backend para possíveis futuras páginas de co
 
 | Backend Migration | Entidade EAV | Frontend Page | Status Frontend |
 |-------------------|--------------|---------------|-----------------|
-| V94 | Ocorrencia | — | ❌ Não iniciado |
+| V94 | Ocorrencia | Ocorrencia | ✅ Concluído PR #163 |
 | V95 | AlertaManutencao | AlertaManutencao | ✅ Concluído PR #153 |
-| V96 | WorkflowManutencao | — | ❌ Não iniciado |
+| V96 | WorkflowManutencao | WorkflowManutencao | ✅ QA Aprovado PR #169 |
 | V97 | AvaliacaoFornecedor | AvaliacaoFornecedor | ✅ Concluído PR #154 |
 | V98 | CompetenciaTecnica | CompetenciaTecnica | ✅ Concluído PR #156 |
 | V99 | LimiteConsumoCombustivel | — | ❌ Não iniciado |
-| V100 | ProdutoAvaliacao | — | ❌ Não iniciado |
-| V101 | FuncionarioBeneficio | — | ❌ Não iniciado |
+| V100 | ProdutoAvaliacao | Produto | ✅ QA Aprovado PR #164 |
+| V100 | ProdutoAvaliacao (avaliação) | ProdutoAvaliacao | ✅ QA Aprovado PR #165 |
+| V101 | FuncionarioBeneficio | FuncionarioBeneficio | ✅ Concluído PR #159 |
 | V102 | CertificacaoTecnico | — | ❌ Não iniciado |
-| V103 | TreinamentoTecnico | — | ❌ Não iniciado |
+| V103 | TreinamentoTecnico | TreinamentoTecnico | ✅ QA Aprovado PR #167 |
 
 > **Nota:** As entidades auxiliares migradas para EAV no backend (Grupo C backend) são configurações avançadas que podem ou não precisar de páginas de configuração dinâmica no frontend. A decisão é de produto/arquitetura.
 
@@ -70,6 +71,17 @@ Mapeamento das migrações EAV do backend para possíveis futuras páginas de co
 | # | Entidade Frontend | Branch | PR | Status | Backend Ref |
 |---|-------------------|--------|-----|--------|-------------|
 | #135 | BannerEcommerce | feat/eav-banner-ecommerce | #155 | ✅ Concluído | Controller #75 |
+| #137 | ConfiguracaoEcommerce | feat/eav-configuracao-ecommerce | #157 | ✅ Concluído | Controller #76 |
+| #139 | Driver | feat/eav-driver | #158 | ✅ Concluído | — |
+| #140 | FuncionarioBeneficio | feat/eav-funcionario-beneficio | #159 | ✅ QA Aprovado | V101 |
+| #141 | GrupoDestaque | feat/eav-grupo-destaque | #160 | ✅ QA Aprovado | Controller #76 |
+| #143 | ManutencaoProgramada | feat/eav-manutencao-programada | #162 | ✅ Concluído | — |
+| #145 | Produto | feat/eav-produto | #164 | ✅ QA Aprovado | V100 |
+| #146 | ProdutoAvaliacao | feat/eav-produto-avaliacao | #165 | ✅ QA Aprovado | V100 |
+| #148 | Titulo | feat/eav-titulo | #166 | ✅ QA Aprovado | — |
+| #149 | TreinamentoTecnico | feat/eav-treinamento-tecnico | #167 | ✅ QA Aprovado | V103 |
+| #150 | Veiculo | feat/eav-veiculo | #168 | ✅ QA Aprovado | — |
+| #151 | WorkflowManutencao | feat/eav-workflow-manutencao | #169 | ✅ QA Aprovado | V96 |
 
 ## Resumo
 
@@ -78,10 +90,10 @@ Mapeamento das migrações EAV do backend para possíveis futuras páginas de co
 | Grupo A | 6 | ✅ Concluído | Entidades nativas |
 | Grupo B | 17 | ✅ Concluído | Entidades nativas |
 | Grupo C | 4 | ✅ Concluído | Entidades nativas |
-| Grupo D — Backend EAV | 10 (V-migration) + novas | 🟢 3/10 V-migration concluído + BannerEcommerce ✅ | ✅ Concluído (V94–V103) + BannerEcommerce (entidade nativa EAV) |
+| Grupo D — Backend EAV | 10 (V-migration) + novas | 🟢 6/10 V-migration concluído + BannerEcommerce + ConfiguracaoEcommerce + Driver + FuncionarioBeneficio + GrupoDestaque + Produto + Titulo + TreinamentoTecnico ✅ | ✅ Concluído (V94–V103) + BannerEcommerce + ConfiguracaoEcommerce + Driver + FuncionarioBeneficio + GrupoDestaque + Produto + Titulo + TreinamentoTecnico (entidades nativas EAV) |
 
-**Total frontend: 31 entidades | 31 concluídas | 0 pendente**
+**Total frontend: 44 entidades | 32 concluídas | 12 QA Aprovado | 0 pendente**
 
 ---
 
-*Última atualização: 2026-05-10 — Grupo D Backend EAV: AlertaManutencao PR #153 ✅, AvaliacaoFornecedor PR #154 ✅, BannerEcommerce PR #155 ✅, CompetenciaTecnica PR #156 ✅*
+*Última atualização: 2026-05-11 — Grupo D: WorkflowManutencao PR #169 ✅ QA Aprovado*

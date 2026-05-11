@@ -1,10 +1,13 @@
 # EAV - Treinamento Técnico
 
-## Issue
-- **Issue:** #90
-- **PR:** #100
+## Issues
+- **Backend Issue:** #90
+- **Backend PR:** #100
+- **Frontend Issue:** #149
+- **Frontend PR:** #167
 - **Módulo:** rh
-- **Status:** ✅ Merged
+- **Status Backend:** ✅ Merged
+- **Status Frontend:** ✅ QA Aprovado
 
 ## Estrutura EAV
 
@@ -94,7 +97,26 @@
 | | `controllers/rh/TreinamentoTecnicoValorController.java` |
 | Migration | `db/migration/V103__treinamento_tecnico_configuracao_dinamica.sql` |
 
+## Frontend (Flutter)
+
+### Páginas EAV de Configuração
+
+7 arquivos em `lib/pages/configuracoes/eav/`:
+- `treinamento_tecnico_eav_config_page.dart` — TabBar (Abas / Grupos / Campos)
+- `treinamento_tecnico_abas_page.dart` — CRUD de abas
+- `treinamento_tecnico_aba_form_page.dart` — Form criar/editar aba
+- `treinamento_tecnico_grupos_page.dart` — CRUD de grupos
+- `treinamento_tecnico_grupo_form_page.dart` — Form criar/editar grupo
+- `treinamento_tecnico_campos_page.dart` — CRUD de campos
+- `treinamento_tecnico_campo_form_page.dart` — Form criar/editar campo
+
+### APIs consumidas
+- `/api/configuracao-treinamento-tecnico/abas`
+- `/api/configuracao-treinamento-tecnico/grupos`
+- `/api/configuracao-treinamento-tecnico/campos`
+
 ## Observações
 - Entidade pai: `models/pessoa/TreinamentoTecnico.java` (já existente)
 - Referência FK: `treinamento_tecnico_valores.treinamento_id → treinamento_tecnico.id`
 - Migração V103 cria tabelas + estrutura padrão inicial
+- Frontend PR #167 implementa página de configuração dinâmica para TreinamentoTecnico

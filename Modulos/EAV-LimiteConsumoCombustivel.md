@@ -82,6 +82,35 @@ Migração completa das colunas da tabela `limite_consumo_combustivel` para valo
 - `funcionario_id` → Motorista
 - `observacao` → Observação
 
+## Frontend — Página de Configuração EAV
+
+**Issue:** [#142](https://github.com/Fich-System/FICH-RETAGUARDA/issues/142)  
+**PR:** [#161](https://github.com/Fich-System/FICH-RETAGUARDA/pull/161)  
+**Branch:** `feat/eav-limite-consumo`  
+**Status:** ✅ QA Aprovado
+
+### Arquivos (7)
+
+| Arquivo | Responsabilidade |
+|---------|-----------------|
+| `limite_consumo_eav_config_page.dart` | TabBar principal — Abas / Grupos / Campos |
+| `limite_consumo_abas_page.dart` | Listagem CRUD de abas |
+| `limite_consumo_aba_form_page.dart` | Formulário criar/editar aba |
+| `limite_consumo_grupos_page.dart` | Listagem CRUD de grupos |
+| `limite_consumo_grupo_form_page.dart` | Formulário criar/editar grupo |
+| `limite_consumo_campos_page.dart` | Listagem CRUD de campos |
+| `limite_consumo_campo_form_page.dart` | Formulário criar/editar campo |
+
+### API
+
+- `/api/configuracao-limite-consumo-combustivel/abas`
+- `/api/configuracao-limite-consumo-combustivel/grupos`
+- `/api/configuracao-limite-consumo-combustivel/campos`
+
+### Rota
+
+- `/configuracoes/configuracao-limite-consumo-combustivel` (adicionada em `main.dart`)
+
 ## Entidade Base
 
 A entidade `LimiteConsumoCombustivel` existente continua sendo usada como entidade principal (com seus relacionamentos com `Veiculo` e `Funcionario`). Os dados configuráveis agora são gerenciados via EAV.

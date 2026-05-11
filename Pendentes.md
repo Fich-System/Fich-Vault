@@ -57,8 +57,21 @@ Issues e tarefas pendentes no Fich-Backend e Fich-Retaguarda (Flutter).
 | #134 | AvaliacaoFornecedor | feat/eav-avaliacao-fornecedor | #154 | ✅ Concluído |
 | #135 | BannerEcommerce | feat/eav-banner-ecommerce | #155 | ✅ Concluído |
 | #136 | CompetenciaTecnica | feat/eav-competencia-tecnica | #156 | ✅ Concluído |
+| #137 | ConfiguracaoEcommerce | feat/eav-configuracao-ecommerce | #157 | ✅ Concluído |
+| #139 | Driver | feat/eav-driver | #158 | ✅ QA Aprovado |
+| #140 | FuncionarioBeneficio | feat/eav-funcionario-beneficio | #159 | ✅ QA Aprovado |
+| #141 | GrupoDestaque | feat/eav-grupo-destaque | #160 | ✅ QA Aprovado |
+| #142 | LimiteConsumoCombustivel | feat/eav-limite-consumo | #161 | ✅ QA Aprovado |
+| #143 | ManutencaoProgramada | feat/eav-manutencao-programada | #162 | ✅ Concluído |
+| #144 | Ocorrencia | feat/eav-ocorrencia | #163 | ✅ QA Aprovado |
+| #145 | Produto | feat/eav-produto | #164 | ✅ QA Aprovado |
+| #146 | ProdutoAvaliacao | feat/eav-produto-avaliacao | #165 | ✅ QA Aprovado |
+| #148 | Titulo | feat/eav-titulo | #166 | ✅ QA Aprovado |
+| #149 | TreinamentoTecnico | feat/eav-treinamento-tecnico | #167 | ✅ QA Aprovado |
+| #150 | Veiculo | feat/eav-veiculo | #168 | ✅ QA Aprovado |
+| #151 | WorkflowManutencao | feat/eav-workflow-manutencao | #169 | ✅ QA Aprovado |
 
-- [ ] Grupo D — 10 entidades Backend EAV (V94–V103) para frontend — 3/10 concluído + BannerEcommerce (entidade nativa EAV #75) ✅
+- [ ] Grupo D — 17 entidades (10 V-migration + novas) — 5/10 V-migration concluído + BannerEcommerce + ConfiguracaoEcommerce + Driver + FuncionarioBeneficio + GrupoDestaque + Produto + ProdutoAvaliacao + Titulo (entidades nativas EAV) ✅
 
 ---
 

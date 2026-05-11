@@ -50,5 +50,18 @@
 | #134 | EAV AvaliacaoFornecedor | feat/eav-avaliacao-fornecedor | #154 | ✅ Concluído |
 | #135 | EAV BannerEcommerce | feat/eav-banner-ecommerce | #155 | ✅ Concluído |
 | #136 | EAV CompetenciaTecnica | feat/eav-competencia-tecnica | #156 | ✅ Concluído |
+| #137 | EAV ConfiguracaoEcommerce | feat/eav-configuracao-ecommerce | #157 | ✅ QA Aprovado |
+| #139 | EAV Driver | feat/eav-driver | #158 | ✅ QA Aprovado |
+| #140 | EAV FuncionarioBeneficio | feat/eav-funcionario-beneficio | #159 | ✅ QA Aprovado |
+| #141 | EAV GrupoDestaque | feat/eav-grupo-destaque | #160 | ✅ QA Aprovado |
+| #142 | EAV LimiteConsumoCombustivel | feat/eav-limite-consumo | #161 | ✅ QA Aprovado |
+| #143 | EAV ManutencaoProgramada | feat/eav-manutencao-programada | #162 | ✅ Concluído |
+| #144 | EAV Ocorrencia | feat/eav-ocorrencia | #163 | ✅ QA Aprovado |
+| #145 | EAV Produto | feat/eav-produto | #164 | ✅ QA Aprovado |
+| #146 | EAV ProdutoAvaliacao | feat/eav-produto-avaliacao | #165 | ✅ QA Aprovado |
+| #148 | EAV Titulo | feat/eav-titulo | #166 | ✅ QA Aprovado |
+| #149 | EAV TreinamentoTecnico | feat/eav-treinamento-tecnico | #167 | ✅ QA Aprovado |
+| #150 | EAV Veiculo | feat/eav-veiculo | #168 | ✅ QA Aprovado |
+| #151 | EAV WorkflowManutencao | feat/eav-workflow-manutencao | #169 | ✅ QA Aprovado |
 
-**Total: 31 issues | 31 concluídas | 0 pendente**
+**Total: 44 issues | 32 concluídas | 12 QA Aprovado | 0 pendente**
