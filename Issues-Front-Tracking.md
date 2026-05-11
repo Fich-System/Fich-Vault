@@ -48,5 +48,7 @@
 |---|--------|--------|-----|--------|
 | #133 | EAV AlertaManutencao | feat/eav-alerta-manutencao | #153 | ✅ Concluído |
 | #134 | EAV AvaliacaoFornecedor | feat/eav-avaliacao-fornecedor | #154 | ✅ Concluído |
+| #135 | EAV BannerEcommerce | feat/eav-banner-ecommerce | #155 | ✅ Concluído |
+| #136 | EAV CompetenciaTecnica | feat/eav-competencia-tecnica | #156 | ✅ Concluído |
 
-**Total: 29 issues | 29 concluídas | 0 pendente**
+**Total: 31 issues | 31 concluídas | 0 pendente**

@@ -54,8 +54,11 @@ Issues e tarefas pendentes no Fich-Backend e Fich-Retaguarda (Flutter).
 | # | Entidade | Branch | PR | Status |
 |---|----------|--------|-----|--------|
 | #133 | AlertaManutencao | feat/eav-alerta-manutencao | #153 | ✅ Concluído |
+| #134 | AvaliacaoFornecedor | feat/eav-avaliacao-fornecedor | #154 | ✅ Concluído |
+| #135 | BannerEcommerce | feat/eav-banner-ecommerce | #155 | ✅ Concluído |
+| #136 | CompetenciaTecnica | feat/eav-competencia-tecnica | #156 | ✅ Concluído |
 
-- [ ] Grupo D — 10 entidades Backend EAV (V94–V103) para frontend — 1/10 concluído
+- [ ] Grupo D — 10 entidades Backend EAV (V94–V103) para frontend — 3/10 concluído + BannerEcommerce (entidade nativa EAV #75) ✅
 
 ---
 

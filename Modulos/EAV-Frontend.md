@@ -337,7 +337,7 @@ lib/pages/configuracoes/eav/
 └── movimentacao_estoque_eav_config_page.dart
 ```
 
-**Total: 204 arquivos** (43 do Grupo A + 119 do Grupo B (17×7) + 28 do Grupo C (4×7: NotaFiscalServico, Servico, RegraTributacao, SubGrupo) + 7 do Grupo D (1×7: AlertaManutencao) + 1 helper eav_helpers.dart + 6 helpers/componentes)
+**Total: 225 arquivos** (43 do Grupo A + 119 do Grupo B (17×7) + 28 do Grupo C (4×7: NotaFiscalServico, Servico, RegraTributacao, SubGrupo) + 28 do Grupo D (4×7: AlertaManutencao, AvaliacaoFornecedor, BannerEcommerce, CompetenciaTecnica) + 1 helper eav_helpers.dart + 6 helpers/componentes)
 
 ## Entidades Implementadas — Grupo C ✅ CONCLUÍDO (4/4)
 
@@ -385,13 +385,16 @@ lib/pages/configuracoes/eav/
 └── subgrupo_eav_config_page.dart
 ```
 
-## Entidades Implementadas — Grupo D 🟢 Em Progresso (1/10)
+## Entidades Implementadas — Grupo D 🟢 Em Progresso (4)
 
 | # | Entidade | Branch | PR | Status |
 |---|----------|--------|-----|--------|
 | #133 | AlertaManutencao | feat/eav-alerta-manutencao | #153 | ✅ Concluído |
+| #134 | AvaliacaoFornecedor | feat/eav-avaliacao-fornecedor | #154 | ✅ Concluído |
+| #135 | BannerEcommerce | feat/eav-banner-ecommerce | #155 | ✅ Concluído |
+| #136 | CompetenciaTecnica | feat/eav-competencia-tecnica | #156 | ✅ Concluído |
 
-**Grupo D: 1/10 — Backend EAV migrations (V94–V103)**
+**Grupo D: 4 concluído — Entidades com backend EAV (V94–V103 + novas)**
 
 ### Estrutura de Arquivos no Projeto (Grupo D adicionado)
 
@@ -404,9 +407,30 @@ lib/pages/configuracoes/eav/
 ├── alerta_manutencao_grupo_form_page.dart
 ├── alerta_manutencao_campos_page.dart
 ├── alerta_manutencao_campo_form_page.dart
-└── alerta_manutencao_eav_config_page.dart
+├── alerta_manutencao_eav_config_page.dart
+├── avaliacao_fornecedor_abas_page.dart
+├── avaliacao_fornecedor_aba_form_page.dart
+├── avaliacao_fornecedor_grupos_page.dart
+├── avaliacao_fornecedor_grupo_form_page.dart
+├── avaliacao_fornecedor_campos_page.dart
+├── avaliacao_fornecedor_campo_form_page.dart
+├── avaliacao_fornecedor_eav_config_page.dart
+├── banner_ecommerce_abas_page.dart
+├── banner_ecommerce_aba_form_page.dart
+├── banner_ecommerce_grupos_page.dart
+├── banner_ecommerce_grupo_form_page.dart
+├── banner_ecommerce_campos_page.dart
+├── banner_ecommerce_campo_form_page.dart
+├── banner_ecommerce_eav_config_page.dart
+├── competencia_tecnica_abas_page.dart
+├── competencia_tecnica_aba_form_page.dart
+├── competencia_tecnica_grupos_page.dart
+├── competencia_tecnica_grupo_form_page.dart
+├── competencia_tecnica_campos_page.dart
+├── competencia_tecnica_campo_form_page.dart
+└── competencia_tecnica_eav_config_page.dart
 ```
 
 ---
 
-*Última atualização: 2026-05-10 — Projeto EAV Frontend expandido! Grupos A–C completos (27/27) + Grupo D Backend EAV iniciado (1/10: AlertaManutencao PR #153 ✅)*
+*Última atualização: 2026-05-10 — Projeto EAV Frontend expandido! Grupos A–C completos (27/27) + Grupo D em progresso (4 concluído: AlertaManutencao #153, AvaliacaoFornecedor #154, BannerEcommerce #155, CompetenciaTecnica #156 ✅)*

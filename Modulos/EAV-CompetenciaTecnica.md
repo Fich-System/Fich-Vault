@@ -124,3 +124,40 @@ Migração completa das colunas da tabela `competencia_tecnica` para valores EAV
 - `metodologia_avaliacao` → Metodologia Avaliação
 - `experiencia_anos` → Experiência (anos)
 - `experiencia_meses` → Experiência (meses)
+
+## Frontend (Flutter — Fich-Retaguarda)
+
+**Issue:** [#136](https://github.com/Fich-System/FICH-RETAGUARDA/issues/136)
+**PR:** [#156](https://github.com/Fich-System/FICH-RETAGUARDA/pull/156)
+**Branch:** `feat/eav-competencia-tecnica`
+**Status:** ✅ QA Aprovado (PR aberto)
+
+### Páginas (7 arquivos)
+
+| Arquivo | Tipo |
+|---------|------|
+| `competencia_tecnica_eav_config_page.dart` | Página principal com abas |
+| `competencia_tecnica_abas_page.dart` | Listagem de abas |
+| `competencia_tecnica_aba_form_page.dart` | Formulário de aba |
+| `competencia_tecnica_grupos_page.dart` | Listagem de grupos |
+| `competencia_tecnica_grupo_form_page.dart` | Formulário de grupo |
+| `competencia_tecnica_campos_page.dart` | Listagem de campos |
+| `competencia_tecnica_campo_form_page.dart` | Formulário de campo |
+
+### APIs
+
+| Endpoint | Método |
+|----------|--------|
+| `/api/configuracao-competencia-tecnica/abas` | CRUD |
+| `/api/configuracao-competencia-tecnica/grupos` | CRUD |
+| `/api/configuracao-competencia-tecnica/campos` | CRUD |
+
+### Rota
+
+- `/configuracoes/competencia-tecnica-eav`
+
+### Alterações em arquivos existentes
+
+- `lib/main.dart` — Registro da rota
+- `lib/models/menu_item.dart` — Item de menu
+- `lib/utils/navigation_helper.dart` — Navegação
