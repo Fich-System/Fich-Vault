@@ -11,35 +11,41 @@
 | #80 | EAV Cliente | feat/eav-cliente | #110 | ✅ Concluído |
 | #79 | EAV CentroDeCusto | feat/eav-centro-custo | #111 | ✅ Concluído |
 
-## GRUPO B — EAV média prioridade 🟡
+## GRUPO B — EAV média prioridade ✅ CONCLUÍDO
 
 | # | Título | Branch | PR | Status |
 |---|--------|--------|-----|--------|
-| #105 | EAV Sinistro | | | ⏳ Pendente |
-| #104 | EAV ChecklistManutencao | | | ⏳ Pendente |
-| #103 | EAV Troca | | | ⏳ Pendente |
-| #102 | EAV Certificacao | | | ⏳ Pendente |
-| #101 | EAV OrdemServico | | | ⏳ Pendente |
-| #100 | EAV Pneu | | | ⏳ Pendente |
-| #99 | EAV Rodizio | | | ⏳ Pendente |
-| #98 | EAV Multa | | | ⏳ Pendente |
-| #97 | EAV Estoque | | | ⏳ Pendente |
-| #96 | EAV NfeEntrada | | | ⏳ Pendente |
-| #95 | EAV Manutencao | | | ⏳ Pendente |
-| #94 | EAV Abastecimento | | | ⏳ Pendente |
-| #93 | EAV ChecklistVeiculos | | | ⏳ Pendente |
-| #88 | EAV TransferenciaBancaria | | | ⏳ Pendente |
-| #87 | EAV MovimentacaoBancaria | | | ⏳ Pendente |
-| #86 | EAV Inventario | | | ⏳ Pendente |
-| #85 | EAV MovimentacaoEstoque | | | ⏳ Pendente |
+| #105 | EAV Sinistro | feat/eav-sinistro | #112 | ✅ Concluído |
+| #104 | EAV ChecklistManutencao | feat/eav-checklist-manutencao | #113 | ✅ Concluído |
+| #103 | EAV Troca | feat/eav-troca | #114 | ✅ Concluído |
+| #102 | EAV Certificacao | feat/eav-certificacao | #115 | ✅ Concluído |
+| #101 | EAV OrdemServico | feat/eav-ordem-servico | #116 | ✅ Concluído |
+| #100 | EAV Pneu | feat/eav-pneu | #117 | ✅ Concluído |
+| #99 | EAV Rodizio | feat/eav-rodizio | #118 | ✅ Concluído |
+| #98 | EAV Multa | feat/eav-multa | #119 | ✅ Concluído |
+| #97 | EAV Estoque | feat/eav-estoque | #120 | ✅ Concluído |
+| #96 | EAV NfeEntrada | feat/eav-nfe-entrada | #121 | ✅ Concluído |
+| #95 | EAV Manutencao | feat/eav-manutencao | #122 | ✅ Concluído |
+| #94 | EAV Abastecimento | feat/eav-abastecimento | #123 | ✅ Concluído |
+| #93 | EAV ChecklistVeiculos | feat/eav-checklist-veiculos | #124 | ✅ Concluído |
+| #88 | EAV TransferenciaBancaria | feat/eav-transferencia-bancaria | #125 | ✅ Concluído |
+| #87 | EAV MovimentacaoBancaria | feat/eav-movimentacao-bancaria | #126 | ✅ Concluído |
+| #86 | EAV Inventario | feat/eav-inventario | #127 | ✅ Concluído |
+| #85 | EAV MovimentacaoEstoque | feat/eav-movimentacao-estoque | #128 | ✅ Concluído |
 
-## GRUPO C — EAV baixa prioridade 🟢
+## GRUPO C — EAV baixa prioridade ✅ CONCLUÍDO
 
 | # | Título | Branch | PR | Status |
 |---|--------|--------|-----|--------|
-| #92 | EAV NotaFiscalServico | | | ⏳ Pendente |
-| #91 | EAV Servico | | | ⏳ Pendente |
-| #90 | EAV RegraTributacao | | | ⏳ Pendente |
-| #89 | EAV SubGrupo | | | ⏳ Pendente |
+| #92 | EAV NotaFiscalServico | feat/eav-notafiscal-servico | #129 | ✅ Concluído |
+| #91 | EAV Servico | feat/eav-servico | #130 | ✅ Concluído |
+| #90 | EAV RegraTributacao | feat/eav-regra-tributacao | #131 | ✅ Concluído |
+| #89 | EAV SubGrupo | feat/eav-subgrupo | #132 | ✅ Concluído |
 
-**Total: 27 issues | 6 concluídas | 21 pendentes**
+## GRUPO D — Backend EAV 🟢
+
+| # | Título | Branch | PR | Status |
+|---|--------|--------|-----|--------|
+| #133 | EAV AlertaManutencao | feat/eav-alerta-manutencao | #153 | ✅ Concluído |
+
+**Total: 28 issues | 28 concluídas | 0 pendente**

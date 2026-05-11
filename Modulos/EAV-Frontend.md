@@ -178,11 +178,235 @@ Para adicionar uma nova entidade EAV no frontend, siga este passo a passo:
 
 ## Próximos Passos
 
-- [ ] **Grupo B** — 17 entidades (média prioridade)
-- [ ] **Grupo C** — 4 entidades (baixa prioridade)
+- [x] **Grupo B** — 17 entidades (média prioridade) ✅
+- [x] **Grupo C** — 4 entidades (baixa prioridade) — ✅ 4/4 CONCLUÍDO (#92 NotaFiscalServico, #91 Servico, #90 RegraTributacao, #89 SubGrupo)
+- [ ] **Grupo D** — Backend EAV (10 entidades) — 🟢 1/10 concluído
 - [ ] Testes de integração das páginas
 - [ ] Validação de permissões por entidade
 
 ---
 
-*Última atualização: 2026-05-10 — Grupo A concluído (6/27 entidades)*
+## Entidades Implementadas — Grupo B ✅ CONCLUÍDO
+
+| # | Entidade | Branch | PR | Status |
+|---|----------|--------|-----|--------|
+| #105 | Sinistro | feat/eav-sinistro | #112 | ✅ Concluído |
+| #104 | ChecklistManutencao | feat/eav-checklist-manutencao | #113 | ✅ Concluído |
+| #103 | Troca | feat/eav-troca | #114 | ✅ Concluído |
+| #102 | Certificacao | feat/eav-certificacao | #115 | ✅ Concluído |
+| #101 | OrdemServico | feat/eav-ordem-servico | #116 | ✅ Concluído |
+| #100 | Pneu | feat/eav-pneu | #117 | ✅ Concluído |
+| #99 | Rodizio | feat/eav-rodizio | #118 | ✅ Concluído |
+| #98 | Multa | feat/eav-multa | #119 | ✅ Concluído |
+| #97 | Estoque | feat/eav-estoque | #120 | ✅ Concluído |
+| #96 | NfeEntrada | feat/eav-nfe-entrada | #121 | ✅ Concluído |
+| #95 | Manutencao | feat/eav-manutencao | #122 | ✅ Concluído |
+| #94 | Abastecimento | feat/eav-abastecimento | #123 | ✅ Concluído |
+| #93 | ChecklistVeiculos | feat/eav-checklist-veiculos | #124 | ✅ Concluído |
+| #88 | TransferenciaBancaria | feat/eav-transferencia-bancaria | #125 | ✅ Concluído |
+| #87 | MovimentacaoBancaria | feat/eav-movimentacao-bancaria | #126 | ✅ Concluído |
+| #86 | Inventario | feat/eav-inventario | #127 | ✅ Concluído |
+| #85 | MovimentacaoEstoque | feat/eav-movimentacao-estoque | #128 | ✅ Concluído |
+
+**Grupo B: 17/17 = 100% concluído**
+
+### Estrutura de Arquivos no Projeto (Grupo B adicionado)
+
+```
+lib/pages/configuracoes/eav/
+├── eav_helpers.dart
+├── ... (Grupo A — 43 arquivos) ...
+├── sinistro_abas_page.dart
+├── sinistro_aba_form_page.dart
+├── sinistro_grupos_page.dart
+├── sinistro_grupo_form_page.dart
+├── sinistro_campos_page.dart
+├── sinistro_campo_form_page.dart
+├── sinistro_eav_config_page.dart
+├── checklist_manutencao_abas_page.dart
+├── checklist_manutencao_aba_form_page.dart
+├── checklist_manutencao_grupos_page.dart
+├── checklist_manutencao_grupo_form_page.dart
+├── checklist_manutencao_campos_page.dart
+├── checklist_manutencao_campo_form_page.dart
+├── checklist_manutencao_eav_config_page.dart
+├── troca_abas_page.dart
+├── troca_aba_form_page.dart
+├── troca_grupos_page.dart
+├── troca_grupo_form_page.dart
+├── troca_campos_page.dart
+├── troca_campo_form_page.dart
+├── troca_eav_config_page.dart
+├── certificacao_abas_page.dart
+├── certificacao_aba_form_page.dart
+├── certificacao_grupos_page.dart
+├── certificacao_grupo_form_page.dart
+├── certificacao_campos_page.dart
+├── certificacao_campo_form_page.dart
+├── certificacao_eav_config_page.dart
+├── ordem_servico_abas_page.dart
+├── ordem_servico_aba_form_page.dart
+├── ordem_servico_grupos_page.dart
+├── ordem_servico_grupo_form_page.dart
+├── ordem_servico_campos_page.dart
+├── ordem_servico_campo_form_page.dart
+├── ordem_servico_eav_config_page.dart
+├── pneu_abas_page.dart
+├── pneu_aba_form_page.dart
+├── pneu_grupos_page.dart
+├── pneu_grupo_form_page.dart
+├── pneu_campos_page.dart
+├── pneu_campo_form_page.dart
+├── pneu_eav_config_page.dart
+├── rodizio_abas_page.dart
+├── rodizio_aba_form_page.dart
+├── rodizio_grupos_page.dart
+├── rodizio_grupo_form_page.dart
+├── rodizio_campos_page.dart
+├── rodizio_campo_form_page.dart
+├── rodizio_eav_config_page.dart
+├── multa_abas_page.dart
+├── multa_aba_form_page.dart
+├── multa_grupos_page.dart
+├── multa_grupo_form_page.dart
+├── multa_campos_page.dart
+├── multa_campo_form_page.dart
+├── multa_eav_config_page.dart
+├── estoque_abas_page.dart
+├── estoque_aba_form_page.dart
+├── estoque_grupos_page.dart
+├── estoque_grupo_form_page.dart
+├── estoque_campos_page.dart
+├── estoque_campo_form_page.dart
+├── estoque_eav_config_page.dart
+├── nfe_entrada_abas_page.dart
+├── nfe_entrada_aba_form_page.dart
+├── nfe_entrada_grupos_page.dart
+├── nfe_entrada_grupo_form_page.dart
+├── nfe_entrada_campos_page.dart
+├── nfe_entrada_campo_form_page.dart
+├── nfe_entrada_eav_config_page.dart
+├── manutencao_abas_page.dart
+├── manutencao_aba_form_page.dart
+├── manutencao_grupos_page.dart
+├── manutencao_grupo_form_page.dart
+├── manutencao_campos_page.dart
+├── manutencao_campo_form_page.dart
+├── manutencao_eav_config_page.dart
+├── abastecimento_abas_page.dart
+├── abastecimento_aba_form_page.dart
+├── abastecimento_grupos_page.dart
+├── abastecimento_grupo_form_page.dart
+├── abastecimento_campos_page.dart
+├── abastecimento_campo_form_page.dart
+├── abastecimento_eav_config_page.dart
+├── checklist_veiculos_abas_page.dart
+├── checklist_veiculos_aba_form_page.dart
+├── checklist_veiculos_grupos_page.dart
+├── checklist_veiculos_grupo_form_page.dart
+├── checklist_veiculos_campos_page.dart
+├── checklist_veiculos_campo_form_page.dart
+├── checklist_veiculos_eav_config_page.dart
+├── transferencia_bancaria_abas_page.dart
+├── transferencia_bancaria_aba_form_page.dart
+├── transferencia_bancaria_grupos_page.dart
+├── transferencia_bancaria_grupo_form_page.dart
+├── transferencia_bancaria_campos_page.dart
+├── transferencia_bancaria_campo_form_page.dart
+├── transferencia_bancaria_eav_config_page.dart
+├── movimentacao_bancaria_abas_page.dart
+├── movimentacao_bancaria_aba_form_page.dart
+├── movimentacao_bancaria_grupos_page.dart
+├── movimentacao_bancaria_grupo_form_page.dart
+├── movimentacao_bancaria_campos_page.dart
+├── movimentacao_bancaria_campo_form_page.dart
+├── movimentacao_bancaria_eav_config_page.dart
+├── inventario_abas_page.dart
+├── inventario_aba_form_page.dart
+├── inventario_grupos_page.dart
+├── inventario_grupo_form_page.dart
+├── inventario_campos_page.dart
+├── inventario_campo_form_page.dart
+└── inventario_eav_config_page.dart
+├── movimentacao_estoque_abas_page.dart
+├── movimentacao_estoque_aba_form_page.dart
+├── movimentacao_estoque_grupos_page.dart
+├── movimentacao_estoque_grupo_form_page.dart
+├── movimentacao_estoque_campos_page.dart
+├── movimentacao_estoque_campo_form_page.dart
+└── movimentacao_estoque_eav_config_page.dart
+```
+
+**Total: 204 arquivos** (43 do Grupo A + 119 do Grupo B (17×7) + 28 do Grupo C (4×7: NotaFiscalServico, Servico, RegraTributacao, SubGrupo) + 7 do Grupo D (1×7: AlertaManutencao) + 1 helper eav_helpers.dart + 6 helpers/componentes)
+
+## Entidades Implementadas — Grupo C ✅ CONCLUÍDO (4/4)
+
+| # | Entidade | Branch | PR | Status |
+|---|----------|--------|-----|--------|
+| #92 | NotaFiscalServico | feat/eav-notafiscal-servico | #129 | ✅ Concluído |
+| #91 | Servico | feat/eav-servico | #130 | ✅ Concluído |
+| #90 | RegraTributacao | feat/eav-regra-tributacao | #131 | ✅ Concluído |
+| #89 | SubGrupo | feat/eav-subgrupo | #132 | ✅ Concluído |
+
+**Grupo C: 4/4 = 100% concluído**
+
+### Estrutura de Arquivos no Projeto (Grupo C adicionado)
+
+```
+lib/pages/configuracoes/eav/
+├── ... (Grupos A e B) ...
+├── notafiscal_servico_abas_page.dart
+├── notafiscal_servico_aba_form_page.dart
+├── notafiscal_servico_grupos_page.dart
+├── notafiscal_servico_grupo_form_page.dart
+├── notafiscal_servico_campos_page.dart
+├── notafiscal_servico_campo_form_page.dart
+└── notafiscal_servico_eav_config_page.dart
+├── servico_abas_page.dart
+├── servico_aba_form_page.dart
+├── servico_grupos_page.dart
+├── servico_grupo_form_page.dart
+├── servico_campos_page.dart
+├── servico_campo_form_page.dart
+└── servico_eav_config_page.dart
+├── regra_tributacao_abas_page.dart
+├── regra_tributacao_aba_form_page.dart
+├── regra_tributacao_grupos_page.dart
+├── regra_tributacao_grupo_form_page.dart
+├── regra_tributacao_campos_page.dart
+├── regra_tributacao_campo_form_page.dart
+└── regra_tributacao_eav_config_page.dart
+├── subgrupo_abas_page.dart
+├── subgrupo_aba_form_page.dart
+├── subgrupo_grupos_page.dart
+├── subgrupo_grupo_form_page.dart
+├── subgrupo_campos_page.dart
+├── subgrupo_campo_form_page.dart
+└── subgrupo_eav_config_page.dart
+```
+
+## Entidades Implementadas — Grupo D 🟢 Em Progresso (1/10)
+
+| # | Entidade | Branch | PR | Status |
+|---|----------|--------|-----|--------|
+| #133 | AlertaManutencao | feat/eav-alerta-manutencao | #153 | ✅ Concluído |
+
+**Grupo D: 1/10 — Backend EAV migrations (V94–V103)**
+
+### Estrutura de Arquivos no Projeto (Grupo D adicionado)
+
+```
+lib/pages/configuracoes/eav/
+├── ... (Grupos A, B e C) ...
+├── alerta_manutencao_abas_page.dart
+├── alerta_manutencao_aba_form_page.dart
+├── alerta_manutencao_grupos_page.dart
+├── alerta_manutencao_grupo_form_page.dart
+├── alerta_manutencao_campos_page.dart
+├── alerta_manutencao_campo_form_page.dart
+└── alerta_manutencao_eav_config_page.dart
+```
+
+---
+
+*Última atualização: 2026-05-10 — Projeto EAV Frontend expandido! Grupos A–C completos (27/27) + Grupo D Backend EAV iniciado (1/10: AlertaManutencao PR #153 ✅)*

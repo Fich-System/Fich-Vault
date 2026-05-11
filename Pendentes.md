@@ -19,9 +19,43 @@ Issues e tarefas pendentes no Fich-Backend e Fich-Retaguarda (Flutter).
 
 **Grupo A: 6/6 = 100% concluído em 2026-05-10**
 
+### Grupo B — Média Prioridade ✅ Concluído
+
+| # | Entidade | Branch | PR | Status |
+|---|----------|--------|-----|--------|
+| #105 | Sinistro | feat/eav-sinistro | #112 | ✅ Concluído |
+| #104 | ChecklistManutencao | feat/eav-checklist-manutencao | #113 | ✅ Concluído |
+| #103 | Troca | feat/eav-troca | #114 | ✅ Concluído |
+| #102 | Certificacao | feat/eav-certificacao | #115 | ✅ Concluído |
+| #101 | OrdemServico | feat/eav-ordem-servico | #116 | ✅ Concluído |
+| #100 | Pneu | feat/eav-pneu | #117 | ✅ Concluído |
+| #99 | Rodizio | feat/eav-rodizio | #118 | ✅ Concluído |
+| #98 | Multa | feat/eav-multa | #119 | ✅ Concluído |
+| #97 | Estoque | feat/eav-estoque | #120 | ✅ Concluído |
+| #96 | NfeEntrada | feat/eav-nfe-entrada | #121 | ✅ Concluído |
+| #95 | Manutencao | feat/eav-manutencao | #122 | ✅ Concluído |
+| #94 | Abastecimento | feat/eav-abastecimento | #123 | ✅ Concluído |
+| #93 | ChecklistVeiculos | feat/eav-checklist-veiculos | #124 | ✅ Concluído |
+| #88 | TransferenciaBancaria | feat/eav-transferencia-bancaria | #125 | ✅ Concluído |
+| #87 | MovimentacaoBancaria | feat/eav-movimentacao-bancaria | #126 | ✅ Concluído |
+| #86 | Inventario | feat/eav-inventario | #127 | ✅ Concluído |
+| #85 | MovimentacaoEstoque | feat/eav-movimentacao-estoque | #128 | ✅ Concluído |
+
+**Grupo B: 17/17 = 100% concluído em 2026-05-10**
+
 - [x] Grupo A — 6 entidades ✅
-- [ ] Grupo B — 17 entidades (média prioridade)
-- [ ] Grupo C — 4 entidades (baixa prioridade)
+- [x] Grupo B — 17 entidades (média prioridade) ✅
+- [x] Grupo C — 4 entidades (baixa prioridade) — ✅ 4/4 CONCLUÍDO (#92 NotaFiscalServico PR #129, #91 Servico PR #130, #90 RegraTributacao PR #131, #89 SubGrupo PR #132)
+
+**🎉 Frontend EAV nativo completo: 27/27 entidades = 100%**
+
+### Grupo D — Backend EAV (Fich-Retaguarda Flutter) 🟢
+
+| # | Entidade | Branch | PR | Status |
+|---|----------|--------|-----|--------|
+| #133 | AlertaManutencao | feat/eav-alerta-manutencao | #153 | ✅ Concluído |
+
+- [ ] Grupo D — 10 entidades Backend EAV (V94–V103) para frontend — 1/10 concluído
 
 ---
 
